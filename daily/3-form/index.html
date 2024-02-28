@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Elden Ring</title>
+</head>
+<body>
+	<h1>Buat Karakter Elden Ring Baru</h1>
+	<form action="https://kodein.com/create" method="get">
+		<div class="nama">
+			<label for="nama">Masukkan nama:</label><br>
+			<input type="text" name="nama" id="nama" placeholder="John Doe" required>
+		</div>
+		<div class="job">
+			<p>Pilih job:</p>
+
+			<input type="radio" name="job" id="warrior" value="warrior" required>
+			<label for="warrior">Warrior</label>
+
+			<input type="radio" name="job" id="archer" value="archer" required>
+			<label for="archer">Archer</label>
+
+			<input type="radio" name="job" id="assassin" value="assassin" required>
+			<label for="assassin">Assassin</label>
+		</div>
+
+		<div class="weapon">
+			<p>Weapon:</p>
+
+			<div class="steel_blade">
+				<input type="checkbox" name="weapon" id="steel_blade" value="steel_blade">
+				<label for="steel_blade">Steel blade</label>
+			</div>
+
+			<div class="wooden_bow">
+				<input type="checkbox" name="weapon" id="wooden_bow" value="wooden_bow">
+				<label for="wooden_bow">Wooden Bow</label>
+			</div>
+
+			<div class="bamboo_stick">
+				<input type="checkbox" name="weapon" id="bamboo_stick" value="bamboo_stick">
+				<label for="bamboo_stick">Bamboo Stick</label>
+			</div>
+
+			<div class="three_leg_chair">
+				<input type="checkbox" name="weapon" id="three_leg_chair" value="three_leg_chair">
+				<label for="three_leg_chair">Three Leg Chair</label>
+			</div>
+
+			<div class="katana">
+				<input type="checkbox" name="katana" id="katana" value="katana">
+				<label for="katana">Katana</label>
+			</div>
+		</div>
+
+		<button>Submit</button>
+	</form>
+</body>
+</html>

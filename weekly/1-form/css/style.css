@@ -1,0 +1,111 @@
+/* just a quick and simple css */
+/* nothing crazy or fancy here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	margin: 70px 100px;
+}
+
+.title {
+	font-size: 2.5em;
+}
+
+.logo {
+	width: 150px;
+}
+
+/* bootstrap-like button */
+.btn {
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	background: #0062cc;
+	transition: background-color .5s;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	color: #ffffff;
+	margin: 15px 0;
+}
+
+.btn:hover {
+	background-color: #0054ae;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: #208637;
+	transition: background-color .5s;
+	padding: 10px;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1em;
+}
+
+button:hover {
+	background-color: #1a6d2d;
+}
+
+.btn-nav {
+	display: block;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.2em;
+	margin: 20px 0;
+	border-radius: 5px;
+	width: fit-content;
+	padding: 10px;
+	background-color: #ffffff;
+	transition: background-color .5s;
+}
+
+.btn-nav:hover {
+	background-color: #e4e4e4;
+}
+
+.media-laptop {
+	max-width: 1500px;
+}
+
+/* yea ik im bad at naming classes */
+
+/* nahhh bold is not good for form titles */
+/* oh yea, and make them BIGGER */
+.form-title {
+	font-weight: normal;
+	font-size: 2em;
+}
+
+/* bold and BIGGER label form */
+.option-title {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/* make some s p a c e vertically*/
+.option {
+	margin: 25px 0;
+}
+
+/* make some ✨ touch up ✨ to the form element */
+.textbox {
+	width: 350px;
+	height: 30px;
+	margin: 6px 0;
+}
+
+.big-textbox {
+	height: 80px;
+}
+
+.dropdown {
+	width: 220px;
+	height: 35px;
+	padding: 0 10px;
+	font-size: 1em;
+}
+
+.option-label {
+	font-size: 1.3em;
+}

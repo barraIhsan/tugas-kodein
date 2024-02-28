@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order QuantumEdge Laptop</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<nav>
+		<a href="index.html" class="btn-nav">&lt Back to Product</a>
+	</nav>
+
+	<header>
+		<img src="https://mabrur.kodeintekno.com/images/nexa-logo.svg" alt="Nexa Technology" class="logo">
+	</header>
+
+	<main>
+		<article class="order">
+			<h1 class="form-title">Choose your QuantumEdge</h1>
+			<form action="order-dua.html" method="get">
+				<div class="laptop-size option">
+					<p class="option-title">Pick your laptop size:</p>
+
+					<input type="radio" name="laptop-size" id="fourteen" value="fourteen" required checked>
+					<label for="fourteen" class="option-label">14 inch</label>
+
+					<input type="radio" name="laptop-size" id="sixteen" value="sixteen" required>
+					<label for="sixteen" class="option-label">16 inch</label>
+
+					<input type="radio" name="laptop-size" id="twenty" value="twenty" required>
+					<label for="twenty" class="option-label">20 inch</label>
+				</div>
+
+				<div class="laptop-color option">
+					<p class="option-title">Pick your laptop color:</p>
+					<select name="laptop-color" class="dropdown" id="laptop-color" required>
+						<option value="" selected disabled>-- Please select a color --</option>
+						<option value="photon-blue">Photon Blue</option>
+						<option value="nebula-violet">Nebula Violet</option>
+						<option value="saturn-green">Saturn Green</option>
+						<option value="pluto-sky">Pluto Sky</option>
+					</select>
+				</div>
+
+				<div class="laptop-addon option">
+					<p class="option-title">Pick your adds on:</p>
+
+					<div class="laptop-bag">
+						<input type="checkbox" name="laptop-addon" id="laptop-bag" value="laptop-bag">
+						<label for="laptop-bag" class="option-label">Laptop Bag (+ $200)</label>
+					</div>
+
+					<div class="laptop-sleeve">
+						<input type="checkbox" name="laptop-addon" id="laptop-sleeve" value="laptop-sleeve">
+						<label for="laptop-sleeve" class="option-label">Laptop Sleeve (+ $100)</label>
+					</div>
+
+					<div class="laptop-stand">
+						<input type="checkbox" name="laptop-addon" id="laptop-stand" value="laptop-stand">
+						<label for="laptop-stand" class="option-label">Floating Laptop Stand (+ $300)</label>
+					</div>
+
+					<div class="control-gloves">
+						<input type="checkbox" name="laptop-addon" id="control-gloves" value="control-gloves">
+						<label for="control-gloves" class="option-label">Control Gloves (+ $500)</label>
+					</div>
+				</div>
+
+				<button>Proceed to Delivery Information</button>
+			</form>
+		</article>
+	</main>
+</body>
+</html>

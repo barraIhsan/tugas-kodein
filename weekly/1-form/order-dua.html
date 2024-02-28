@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Delivery Information</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<nav>
+		<a href="index.html" class="btn-nav">&lt Back to Product</a>
+	</nav>
+
+	<header>
+		<img src="https://mabrur.kodeintekno.com/images/nexa-logo.svg" alt="Nexa Technology" width="150" class="logo">
+	</header>
+
+	<main>
+		<article class="delivery-info">
+			<h1 class="form-title">Personal and Delivery Information</h1>
+			<form action="https://mabrur.kodeintekno.com/order-detail.html" method="get">
+				<div class="name option">
+					<label for="name" class="option-title">Name:</label><br>
+					<input type="text" class="textbox" name="name" id="name" placeholder="John Doe" required>
+				</div>
+
+				<div class="email option">
+					<label for="email" class="option-title">Email:</label><br>
+					<input type="email" class="textbox" name="email" id="email" placeholder="johndoe@example.com" required>
+				</div>
+
+				<div class="phone option">
+					<label for="phone" class="option-title">Phone:</label><br>
+					<input type="tel" class="textbox" name="phone" id="phone" placeholder="081234567890" pattern="(0|\+\d{1,3})? ?\d{3}( |-)?\d{3,4}( |-)?\d{3,4}" required>
+				</div>
+
+				<div class="address option">
+					<label for="address" class="option-title">Address:</label><br>
+					<textarea name="address" class="textbox big-textbox" id="address" cols="40" rows="5" placeholder="123 St. Louis" required></textarea>
+				</div>
+
+				<div class="shipping option">
+					<p class="option-title">Delivered by:</p>
+
+					<input type="radio" class="option-item" name="shipping" id="regular" value="regular" required checked>
+					<label for="regular" class="option-label">Regular Shipping Truck</label>
+					<br>
+					<input type="radio" class="option-item" name="shipping" id="drone" value="drone" required>
+					<label for="drone" class="option-label">Drone (+ $100)</label>
+				</div>
+
+				<p><em>Note: All include super tough frame protector</em></p>
+
+				<button>Proceed to Purchase</button>
+			</form>
+		</article>
+	</main>
+</body>
+</html>

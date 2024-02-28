@@ -1,0 +1,21 @@
+.ganjil,
+.genap {
+	display: flex;
+	flex-direction: row;
+}
+
+.square {
+	background-color: #dddddd;
+	width: 40px;
+	height: 40px;
+}
+
+.ganjil > .square:nth-of-type(odd),
+.genap > .square:nth-of-type(even) {
+	background-color: #000000;
+}
+
+section,
+p {
+	color: blue;
+}
