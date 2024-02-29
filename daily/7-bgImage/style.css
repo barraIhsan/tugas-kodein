@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	background-image: url("img/bg.png");
+	font-family: "Barlow", Arial, Helvetica, sans-serif;
+	margin: 100px;
+}
+
+.bigTitle {
+	font-weight: 700;
+	font-size: 45px;
+	color: #2c6759;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.highlight {
+	background-color: #19dcae;
+	color: white;
+	padding: 3px 5px;
+}
+
+.container {
+	display: flex;
+	width: fit-content;
+	margin: 0 auto;
+	gap: 38px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.description {
+	font-size: 16px;
+}
+
+.card {
+	border-radius: 16px;
+	padding: 20px;
+	width: 280px;
+	height: 420px;
+	box-sizing: border-box;
+	background-size: cover !important;
+	background-position: center !important;
+	transition: all 0.1s;
+}
+
+.card:hover {
+	border: 5px solid #19dcae;
+}
+
+/* This is a dirty hack that I use so I can stack image and color simultaneously */
+/* The disadvantages is the css kinda dirty and you have to use !important */
+/* The alternative for this approach is */
+/* 1. Make the .card just fill the image */
+/* 2. Make a div inside .card and fill it with color */
+
+.firstCard {
+	background: linear-gradient(#2c6759b2, #2c6759b2), url("img/one.png");
+}
+
+.firstCard:hover {
+	background: linear-gradient(#2c6759e5, #2c6759e5), url("img/one.png");
+}
+
+.secondCard {
+	background: linear-gradient(#2c6759b2, #2c6759b2), url("img/two.png");
+}
+
+.secondCard:hover {
+	background: linear-gradient(#2c6759e5, #2c6759e5), url("img/two.png");
+}
+
+.thirdCard {
+	background: linear-gradient(#2c6759b2, #2c6759b2), url("img/three.png");
+}
+
+.thirdCard:hover {
+	background: linear-gradient(#2c6759e5, #2c6759e5), url("img/three.png");
+}
