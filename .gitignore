@@ -1,2 +1,5 @@
 # Zip Files
 *.zip
+
+# A folder for me to learn in class, not for assignments
+learn/
