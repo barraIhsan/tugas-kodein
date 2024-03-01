@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+body {
+	background-image: url("img/bg.png");
+	background-size: cover;
+	font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 480px;
+	height: 500px;
+	border-radius: 24px;
+	padding: 40px;
+	background-color: white;
+	box-shadow: 0px 6px 25px 0px #bbd5ff80;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 700;
+	color: #2d208a;
+	margin-top: 24px;
+}
+
+.description {
+	margin: -20px 0 56px;
+	font-weight: 400;
+	font-size: 24px;
+	color: #b1accd;
+}
+
+.labelLogin {
+	font-size: 18px;
+	font-weight: 500;
+	color: #2d208a;
+}
+
+.inputLogin {
+	margin: 5px 0 32px;
+	width: 458px;
+	height: 18px;
+	border-radius: 4px;
+	border: 1px solid #b1accd;
+	padding: 10px;
+	transition: all 0.1s;
+}
+
+.inputLogin::placeholder {
+	font-size: 18px;
+	color: #b1accd;
+}
+
+.inputLogin:focus {
+	outline: 2px solid #3d67ff;
+}
+
+.btnLogin {
+	width: 480px;
+	height: 54px;
+	border: none;
+	text-transform: uppercase;
+	background-color: #3d67ff;
+	border-radius: 4px;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	color: white;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.btnLogin:hover {
+	background-color: #2d208a;
+}
