@@ -53,7 +53,7 @@ a {
 }
 
 .card:hover {
-	border: 5px solid #19dcae;
+	outline: 5px solid #19dcae;
 }
 
 /* This is a dirty hack that I use so I can stack image and color simultaneously */
