@@ -3,6 +3,7 @@
 body {
 	background-image: url("img/bg.png");
 	background-size: cover;
+	background-position: center;
 	font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
 }
 
