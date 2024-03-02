@@ -11,7 +11,7 @@ In this repo, you'll find my school assignments conveniently stored for referenc
     -   ### [📁 4 - Checkerboard](daily/4-checkerboard/)
     -   ### [📁 5 - CSS Selector](daily/5-cssSelector/)
     -   ### [📁 6 - Border Box](daily/6-borderBox/)
-    -   ### [📁 6 - Background Image](daily/7-bgImage/)
+    -   ### [📁 7 - Background Image](daily/7-bgImage/)
 -   ## [📂 Weekly Assignments](weekly/)
     -   ### [📁 1 - Form](weekly/1-form/)
     -   ### [📁 2 - Login](weekly/2-login/)
