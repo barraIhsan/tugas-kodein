@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
+/* I could use background shorthand, yes. But this aproach is easier to read */
 body {
 	background-image: url("img/bg.png");
+	background-color: #edf6ff;
 	background-size: cover;
 	background-position: center;
 	font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
