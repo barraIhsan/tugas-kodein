@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+	background-image: url("img/bg.png");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	gap: 20px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.card {
+	width: 56px;
+	height: 56px;
+	padding: 12px;
+	background-color: #ffffffc0;
+	border-radius: 12px;
+}
+
+.playerName {
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-top: 3px;
+	text-transform: uppercase;
+}
+
+.playerNum {
+	font-weight: 700;
+	font-size: 32px;
+	margin-top: -10px;
+}
