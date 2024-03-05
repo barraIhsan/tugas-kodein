@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	max-width: 800px;
+}
+
+.card {
+	width: 260px;
+	height: 400px;
+	padding: 20px;
+}
+
+.cardCircle {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #0000004d;
+}
+
+.cardImg {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	height: 40px;
+}
+
+.cardName {
+	font-size: 24px;
+	margin: 33px 0;
+}
+
+.cardDescription {
+	font-size: 12px;
+	margin: 33px 0;
+	height: 130px;
+}
+
+.cardOne {
+	background-color: #e28525;
+	border-radius: 12px 0 0 12px;
+}
+
+.cardTwo {
+	background-color: #015072;
+}
+
+.cardThree {
+	background-color: #078071;
+	border-radius: 0 12px 12px 0;
+}
+
+.cardLink {
+	text-decoration: none;
+	color: black;
+	padding: 12px 20px;
+	border-radius: 100px;
+	background-color: white;
+	font-weight: 500;
+}
