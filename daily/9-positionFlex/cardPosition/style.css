@@ -34,7 +34,7 @@ main {
 }
 
 .cardImg {
-	position: absolute;
+	position: relative;
 	left: 20px;
 	top: 10px;
 	height: 40px;
