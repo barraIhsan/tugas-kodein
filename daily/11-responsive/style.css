@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+	height: 100vh;
+	color: white;
+}
+
+/* Navbar */
+
+nav {
+	background-color: black;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5em 4em;
+	align-items: center;
+	font-size: 18px;
+	border-bottom: 1px solid #ffffff40;
+}
+
+.navLogo {
+	display: flex;
+	flex-direction: row;
+	font-weight: 700;
+	align-items: center;
+	gap: 0.75em;
+}
+
+.navSquare {
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.navList {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	gap: 5em;
+	cursor: pointer;
+}
+
+.navBtn {
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 12px;
+	padding: 0.75em 1.5em;
+	font-weight: 600;
+	color: white;
+}
+
+.navHamburger {
+	display: none;
+}
+
+/* Hero */
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	padding: 3em 0;
+	background: linear-gradient(180deg, #000000 0%, #666666 100%);
+}
+
+.left-container {
+	padding: 0 4em;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.75em;
+}
+
+.right-container {
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.right-container img {
+	width: 100%;
+}
+
+.eyebrow {
+	background: linear-gradient(90deg, #f45028 0%, #ebb907 100%);
+	padding: 0.6em;
+	width: fit-content;
+	border-radius: 100px;
+	font-size: 1.1em;
+}
+
+.title {
+	font-size: 4em;
+	font-weight: 600;
+	margin: 0.2em 0;
+	max-width: 10em;
+}
+
+.description {
+	font-size: 1.5em;
+	line-height: 1.3em;
+	max-width: 25em;
+}
+
+.button {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border-radius: 12px;
+	padding: 0.75em 1.5em;
+	width: fit-content;
+	font-weight: 600;
+	margin-top: 2em;
+}
+
+.grayText {
+	color: #c8c8c8;
+}
+
+/* Stats */
+
+.stats {
+	position: relative;
+	overflow: hidden;
+	background-color: black;
+	padding: 5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+.statsTitle {
+	font-weight: 600;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 2em;
+	max-width: 13em;
+	z-index: 1;
+}
+
+.statsNum {
+	font-weight: 600;
+	font-size: 4em;
+}
+
+.statsList {
+	font-family: "Manrope", Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	gap: 5em;
+}
+
+.statsItem {
+	width: 13em;
+}
+
+.statsItem ul {
+	list-style-type: none;
+	margin-top: 1em;
+	position: relative;
+}
+
+.statsItem li {
+	margin: 0.5em 0;
+}
+
+.shader {
+	background: linear-gradient(180deg, #00000000, #000000);
+	height: 7em;
+	position: absolute;
+	width: 100%;
+	bottom: -1em;
+	/* This just makes the element click-through */
+	pointer-events: none;
+}
+
+.statsImg {
+	position: absolute;
+	width: 12em;
+	top: 1em;
+	right: -5em;
+	z-index: 0;
+}
+
+/* @media */
+
+@media (max-width: 1080px) {
+	.navList,
+	.navBtn {
+		display: none;
+	}
+
+	.navHamburger {
+		display: flex;
+		flex-direction: column;
+		gap: 0.3em;
+	}
+
+	.navHamburgerBar {
+		height: 0.125em;
+		width: 2em;
+		background-color: white;
+	}
+}
+
+@media (max-width: 820px) {
+	.hero {
+		flex-direction: column-reverse;
+		gap: 5em;
+	}
+
+	.statsList {
+		padding: 0 2em;
+	}
+
+	.button {
+		width: 100%;
+		font-size: 24px;
+		text-align: center;
+	}
+}

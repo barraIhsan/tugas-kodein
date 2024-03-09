@@ -15,6 +15,8 @@ In this repo, you'll find my school assignments conveniently stored for referenc
     -   ### [📁 8 - Flexbox](daily/8-flexbox/)
     -   ### [📂 9 - More Flexbox Practices](daily/9-moreFlex/)
     -   ### [📂 10 - Position](daily/10-position/)
+    -   ### [📂 11 - Responsive](daily/11-responsive/)
+    -   ### [📂 12 - Cards](daily/12-cards/)
 -   ## [📂 Weekly Assignments](weekly/)
     -   ### [📁 1 - Form](weekly/1-form/)
     -   ### [📁 2 - Login](weekly/2-login/)

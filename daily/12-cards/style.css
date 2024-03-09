@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #0369a1;
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.profileCard {
+	background-color: white;
+	width: 20em;
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+.banner {
+	width: 100%;
+	aspect-ratio: 16 / 5;
+	object-fit: cover;
+	object-position: center;
+}
+
+.pfp {
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: relative;
+	top: -2em;
+}
+
+.name {
+	font-weight: 700;
+	font-size: 1.25em;
+	margin-top: -1em;
+}
+
+.location {
+	color: #AAA2A2;
+}
+
+.bio {
+	margin: 1.5em 1em;
+}
+
+.links a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	background-color: #E0F2FE;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
+}
