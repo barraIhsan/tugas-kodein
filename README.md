@@ -20,3 +20,4 @@ In this repo, you'll find my school assignments conveniently stored for referenc
 -   ## [📂 Weekly Assignments](weekly/)
     -   ### [📁 1 - Form](weekly/1-form/)
     -   ### [📁 2 - Login](weekly/2-login/)
+    -   ### [📁 3 - Landing Page](weekly/3-landingPage/)
