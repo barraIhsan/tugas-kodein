@@ -22,6 +22,7 @@ body {
 	border-radius: 1em;
 	overflow: hidden;
 	margin: 1em;
+	box-shadow: 20px #00000026;
 }
 
 .banner {
@@ -65,14 +66,15 @@ body {
 	border-radius: 1em;
 	padding: 1em;
 	margin: 1em;
-}
 
-.link:hover {
-	background-color: #cbdbe6;
-}
+	&:hover {
+		background-color: #cbdbe6;
+	}
 
-.link img {
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0 1em 0 0;
+	img {
+		width: 1.5em;
+		height: 1.5em;
+		margin: 0 1em 0 0;
+	}
+
 }
