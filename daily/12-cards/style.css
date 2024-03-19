@@ -21,11 +21,12 @@ body {
 	width: 20em;
 	border-radius: 1em;
 	overflow: hidden;
+	margin: 1em;
 }
 
 .banner {
 	width: 100%;
-	aspect-ratio: 16 / 5;
+	aspect-ratio: 16 / 9;
 	object-fit: cover;
 	object-position: center;
 }
@@ -46,19 +47,32 @@ body {
 }
 
 .location {
-	color: #AAA2A2;
+	color: #aaa2a2;
 }
 
 .bio {
 	margin: 1.5em 1em;
 }
 
-.links a {
+.link {
 	text-decoration: none;
 	color: black;
-	display: block;
-	background-color: #E0F2FE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #e0f2fe;
+	transition: 0.3s;
 	border-radius: 1em;
 	padding: 1em;
 	margin: 1em;
+}
+
+.link:hover {
+	background-color: #cbdbe6;
+}
+
+.link img {
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 1em 0 0;
 }
