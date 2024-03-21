@@ -38,7 +38,7 @@ body {
 	border-radius: 50%;
 	border: 2px solid white;
 	position: relative;
-	top: -2em;
+	top: -2.5em;
 }
 
 .name {
@@ -76,5 +76,4 @@ body {
 		height: 1.5em;
 		margin: 0 1em 0 0;
 	}
-
 }
