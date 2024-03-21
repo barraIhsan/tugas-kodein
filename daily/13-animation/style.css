@@ -36,12 +36,14 @@ main {
 	flex: 1;
 	position: relative;
 
-	&:hover .card:last-child {
-		transform: rotate(20deg) translate(1em, -2em);
-	}
+	&:hover .card {
+		&:last-child {
+			transform: rotate(20deg) translate(1em, -2em);
+		}
 
-	&:hover .card:first-child {
-		transform: rotate(-20deg) translate(-3em, 2em);
+		&:first-child {
+			transform: rotate(-20deg) translate(-3em, 2em);
+		}
 	}
 }
 
