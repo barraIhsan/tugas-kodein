@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.sky {
+	background-color: #90D7FF;
+	flex: 1;
+}
+
+.grass {
+	background-color: #7BD279;
+	flex: 1;
+}
+
+.road {
+	background-color: #838383;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	.marker {
+		width: 100%;
+		border-bottom: 10px dashed white;
+	}
+
+	.mario {
+		animation: 10s move forwards;
+	}
+
+	.bowser {
+		animation: 15s move forwards;
+	}
+}
+
+@keyframes move {	
+	to {
+		transform: translate(2400px);
+	}
+}
