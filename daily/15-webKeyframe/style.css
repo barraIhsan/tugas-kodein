@@ -115,8 +115,9 @@ main {
 		.imgAsterisk {
 			position: absolute;
 			height: 20%;
-			top: 100px;
-			right: 100px
+			top: 5%;
+			right: 5%;
+			animation: rotate 10s linear infinite;
 		}
 
 		.imgStar {
@@ -128,9 +129,19 @@ main {
 			position: absolute;
 			height: 30%;
 			z-index: 1;
-			left: 20px;
-			bottom: 20px;
+			left: 2%;
+			bottom: 2%;
+			animation: rotate 10s linear infinite;
 		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
 
