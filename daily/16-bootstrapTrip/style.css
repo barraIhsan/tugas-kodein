@@ -1,0 +1,40 @@
+.img-carousel {
+	height: 75vh;
+	object-fit: cover;
+}
+
+i {
+	font-size: 2rem;
+	color: white;
+}
+
+#features {
+	background-color: #05404d;
+	color: white;
+}
+
+.card-img-top {
+	height: 320px;
+	object-fit: cover;
+}
+
+.demo {
+	height: 100px;
+	background-color: #cacaca;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+.demoRow {
+	padding: 12px;
+	background-color: #eaeaea;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 16px;
+}
+
+.demoTest {
+	text-align: center;
+}
