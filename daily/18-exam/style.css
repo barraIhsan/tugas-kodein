@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 50px;
+
+	.navRight ul {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		li a {
+			color: black;
+			text-decoration: none;
+			font-weight: 500;
+		}
+
+		.navLang {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 48px;
+			height: 48px;
+			border: 1px solid #71919f;
+			border-radius: 100px;
+
+			a {
+				color: #71919f;
+			}
+		}
+
+		.navContact {
+			padding: 12px 24px;
+			background-color: #71919f;
+			border-radius: 100px;
+
+			a {
+				color: white;
+			}
+		}
+	}
+}
+
+.navHamburger {
+	display: none;
+}
+
+.hero {
+	background: linear-gradient(33.66deg, #cde6ed 1.55%, #9db9c4 43.94%, #71919f 82.01%);
+	display: flex;
+	justify-content: space-between;
+
+	.heroLeft {
+		padding: 0 64px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1;
+		gap: 48px;
+
+		h1 {
+			margin: 0;
+			color: white;
+			font-size: 100px;
+
+			.heroBig {
+				font-size: 120px;
+			}
+		}
+
+		p {
+			font-size: 28px;
+		}
+	}
+
+	.heroRight {
+		flex: 1;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.bigCard {
+	position: relative;
+	top: -300px;
+	width: 1440px;
+	margin: auto;
+	padding: 32px;
+	background-color: white;
+	border-radius: 96px 96px 32px 32px;
+
+	.cards {
+		display: flex;
+		justify-content: space-between;
+
+		.card {
+			background-position: center;
+			background-size: cover;
+
+			width: 400px;
+			height: 480px;
+			padding: 48px;
+
+			border-radius: 64px 32px 32px 32px;
+
+			h2 {
+				font-size: 40px;
+				color: white;
+			}
+
+			p {
+				color: white;
+				font-weight: 300;
+				font-size: 40px;
+				position: relative;
+				top: 260px;
+			}
+
+			&:first-child {
+				background: linear-gradient(#000000b2, #000000b2), url(img/cardOne.png) center / cover;
+			}
+
+			&:nth-child(2) {
+				background: linear-gradient(#000000b2, #000000b2), url(img/cardTwo.png) center / cover;
+			}
+
+			&:last-child {
+				background: linear-gradient(#000000b2, #000000b2), url(img/cardThree.png) center / cover;
+				border-radius: 32px 64px 32px 32px;
+			}
+		}
+	}
+
+	.services {
+		.servicesHeader {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+
+			h2 {
+				font-size: 28px;
+				font-weight: 400;
+				color: #71919f;
+				margin: 32px 0;
+			}
+
+			.line {
+				height: 1px;
+				width: 100%;
+				border-bottom: 2px solid #71919f;
+			}
+		}
+
+		h3 {
+			font-size: 64px;
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.navRight {
+		display: none;
+	}
+
+	.navHamburger {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		justify-content: center;
+
+		.hamburgerBar {
+			height: 3px;
+			width: 32px;
+			background-color: black;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	nav {
+		padding: 24px 12px;
+
+		.navLeft img {
+			height: 30px;
+		}
+	}
+}
