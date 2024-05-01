@@ -97,7 +97,7 @@ nav {
 .bigCard {
 	position: relative;
 	top: -300px;
-	max-width: 1440px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 32px;
 	background-color: white;
@@ -111,21 +111,21 @@ nav {
 			background-position: center;
 			background-size: cover;
 
-			max-width: 400px;
-			height: 480px;
+			max-width: 350px;
+			height: 450px;
 			padding: 48px;
 
 			border-radius: 64px 32px 32px 32px;
 
 			h2 {
-				font-size: 40px;
+				font-size: 30px;
 				color: white;
 			}
 
 			p {
 				color: white;
 				font-weight: 300;
-				font-size: 40px;
+				font-size: 30px;
 				position: relative;
 				top: 260px;
 			}
@@ -166,7 +166,7 @@ nav {
 		}
 
 		h3 {
-			font-size: 64px;
+			font-size: 48px;
 		}
 	}
 }
