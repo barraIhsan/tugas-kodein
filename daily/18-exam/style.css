@@ -63,7 +63,7 @@ nav {
 	justify-content: space-between;
 
 	.heroLeft {
-		padding: 0 64px;
+		padding: 32px 64px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -76,12 +76,12 @@ nav {
 			font-size: clamp(2rem, 4vw, 10rem);
 
 			.heroBig {
-				font-size: clamp(1rem, 4vw, 8rem);
+				font-size: clamp(2.5rem, 4vw, 8rem);
 			}
 		}
 
 		p {
-			font-size: clamp(0.1rem, 1.5vw, 2rem);
+			font-size: clamp(1rem, 1.5vw, 2rem);
 		}
 	}
 
@@ -105,7 +105,9 @@ nav {
 
 	.cards {
 		display: flex;
-		justify-content: space-between;
+		gap: 32px;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		.card {
 			background-position: center;
@@ -177,6 +179,12 @@ nav {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.bigCard {
+		top: 0;
+	}
+}
+
 @media screen and (max-width: 980px) {
 	.navRight {
 		display: none;
@@ -194,6 +202,36 @@ nav {
 			background-color: black;
 		}
 	}
+
+	.hero {
+		.heroRight {
+			display: none;
+		}
+
+		.heroLeft {
+			h1 {
+				font-size: clamp(2rem, 7vw, 10rem);
+
+				.heroBig {
+					font-size: clamp(2.5rem, 7vw, 10rem);
+				}
+			}
+		}
+	}
+
+	.bigCard {
+		.services {
+			.servicesHeader {
+				h2 {
+					font-size: 24px;
+				}
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 410px) {
@@ -202,6 +240,26 @@ nav {
 
 		.navLeft img {
 			height: 30px;
+		}
+	}
+
+	.hero {
+		.heroLeft {
+			padding: 32px;
+		}
+	}
+
+	.bigCard {
+		.cards {
+			gap: 12px;
+			
+			.card {
+				height: 350px;
+
+				p {
+					top: 150px;
+				}
+			}
 		}
 	}
 }
