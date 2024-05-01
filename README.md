@@ -21,6 +21,8 @@ In this repo, you'll find my school assignments conveniently stored for referenc
     -   ### [📂 14 - Keyframe (Mario Practice)](daily/14-keyframe/)
     -   ### [📂 15 - Web Keyframe](daily/15-webKeyframe/)
     -   ### [📂 16 - Bootstrap Trip Website](daily/16-bootstrapTrip/)
+    -   ### [📂 17 - Landing Page](daily/17-landingPage/)
+    -   ### [📂 18 - Daily Exam](daily/18-exam/)
 -   ## [📂 Weekly Assignments](weekly/)
     -   ### [📁 1 - Form](weekly/1-form/)
     -   ### [📁 2 - Login](weekly/2-login/)
