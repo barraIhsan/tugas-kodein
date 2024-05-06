@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Tugas Pekanan 5</h1>
+			<h2>Soal 1</h2>
+			<ol>
+				<li>Buatkan sebuah variabel (nama variabel bebas) yang berisi kalimat ini -> Daripada hujan "emas" di negeri orang, lebih baik hujan "batu" di negeri sendiri</li>
+				<li>Dan log di console variabel tersebut! Tidak boleh error!</li>
+			</ol>
+			<div class="code">
+				<code>// First question</code>
+				<code>let quotes = 'Daripada hujan "emas" di negeri orang, lebih baik hujan "batu" di negeri sendiri.';</code>
+				<code>console.log(quotes);</code>
+			</div>
+
+			<h2>Soal 2</h2>
+			<ol>
+				<li>Buatkan variabel bernama "quantity" dan isikan dengan sebuah angka antara 2 sampai 10</li>
+				<li>Buatkan variabel bernama "price" dan isikan dengan sebuah angka antara 10 sampai 20</li>
+				<li>Dengan menggunakan template literals, gabungkan variabel-variabel tersebut dan buatkan sebuah variabel bernama "sentence" yang akan menghasilkan sebuah kalimat: "Mom bought us 5 Croissant Almonds with $12 each. So mom spent total of $60."</li>
+				<li>Lalu log di console variabel "sentence" tersebut</li>
+			</ol>
+			<div class="code">
+				<code>// Second question</code>
+				<code>let qty = 7;</code>
+				<code>let sentence = `Mom bought us ${qty} Croissant Almonds with \$${price} each. So mom spent total of \$${price*qty}`;</code>
+				<code>console.log(sentence);</code>
+			</div>
+
+			<h2>Soal 3</h2>
+			<ol>
+				<li>Tuliskan if-else if statement dengan kondisi sebagai berikut</li>
+				<li>Buatkan varibel dengan nama trafficLight</li>
+				<li>Jika value trafficLight adalah "stop" maka log di console "red"</li>
+				<li>Jika value trafficLight adalah "slow" maka log di console "yellow"</li>
+				<li>Jika value trafficLight adalah "go" maka log di console "green"</li>
+				<li>Jika value selain di atas maka log di console "purple"</li>
+				<li>Cobalah mengganti-ganti variabel trafficLight!</li>
+			</ol>
+			<div class="code">
+				<code>// Third question</code>
+				<code>let trafficLight = "stop";</code>
+				<code>if (trafficLight == "stop") {</code>
+				<code class="indent">console.log("red");</code>
+				<code>} else if (trafficLight == "slow") {</code>
+				<code class="indent">console.log("yellow");</code>
+				<code>} else if (trafficLight == "go") {</code>
+				<code class="indent">console.log("green");</code>
+				<code>} else {</code>
+				<code class="indent">console.log("purple");</code>
+				<code>}</code>
+			</div>
+
+			<h2>Soal 4</h2>
+			<ol>
+				<li>Tuliskan baris baris kode nested conditional</li>
+				<li>Buatkan variabel bernama umur yang berisikan angka</li>
+				<li>Jika umur kurang dari 30 dan lebih dari 20 maka log di console "Anda telah cukup umur"</li>
+				<li>Jika umur kurang dari 20 dan merupakan umur ganjil maka log di console "Umur Anda spesial"</li>
+				<li>Cobalah mengganti-ganti variabel umur!</li>
+			</ol>
+			<div class="code">
+				<code>// Fourth question</code>
+				<code>let umur = 15;</code>
+				<code>if (umur > 20 && umur < 30) {</code>
+				<code class="indent">console.log("Anda cukup umur");</code>
+				<code>} else if (umur < 20 && umur % 2 == 1) {</code>
+				<code class="indent">console.log("Umur Anda spesial");</code>
+				<code>}</code>
+			</div>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
