@@ -48,13 +48,13 @@
 				<code>// Third question</code>
 				<code>let trafficLight = "stop";</code>
 				<code>if (trafficLight == "stop") {</code>
-				<code class="indent">console.log("red");</code>
+				<code>&emsp;console.log("red");</code>
 				<code>} else if (trafficLight == "slow") {</code>
-				<code class="indent">console.log("yellow");</code>
+				<code>&emsp;console.log("yellow");</code>
 				<code>} else if (trafficLight == "go") {</code>
-				<code class="indent">console.log("green");</code>
+				<code>&emsp;console.log("green");</code>
 				<code>} else {</code>
-				<code class="indent">console.log("purple");</code>
+				<code>&emsp;console.log("purple");</code>
 				<code>}</code>
 			</div>
 
@@ -69,10 +69,14 @@
 			<div class="code">
 				<code>// Fourth question</code>
 				<code>let umur = 15;</code>
-				<code>if (umur > 20 && umur < 30) {</code>
-				<code class="indent">console.log("Anda cukup umur");</code>
-				<code>} else if (umur < 20 && umur % 2 == 1) {</code>
-				<code class="indent">console.log("Umur Anda spesial");</code>
+				<code>if (umur > 20) {</code>
+				<code>&emsp;if (umur < 30) {</code>
+				<code>&emsp;&emsp;console.log("Anda cukup umur");</code>
+				<code>&emsp;}</code>
+				<code>} else if (umur < 20) {</code>
+				<code>&emsp;if (umur % 2 == 1) {</code>
+				<code>&emsp;&emsp;console.log("Umur Anda spesial");</code>
+				<code>&emsp;}
 				<code>}</code>
 			</div>
 		</main>

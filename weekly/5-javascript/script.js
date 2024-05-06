@@ -24,8 +24,12 @@ if (trafficLight == "stop") {
 
 // Fourth question
 let umur = 15;
-if (umur > 20 && umur < 30) {
-	console.log("Anda cukup umur");
-} else if (umur < 20 && umur % 2 == 1) {
-	console.log("Umur Anda spesial");
+if (umur > 20) {
+	if (umur < 30) {
+		console.log("Anda cukup umur");
+	}
+} else if (umur < 20) {
+	if (umur % 2 == 1) {
+		console.log("Umur Anda spesial");
+	}
 }

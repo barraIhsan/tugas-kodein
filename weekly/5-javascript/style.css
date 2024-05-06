@@ -42,8 +42,4 @@ li {
 		font-family: "Fira Code", 'Courier New', Courier, monospace;
 		display: block;
 	}
-
-	.indent {
-		margin-left: 30px;
-	}
 }
