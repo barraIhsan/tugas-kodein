@@ -12,19 +12,64 @@
 		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 		<style>
+			.badge-html {
+				background: #e44d26;
+			}
+			.badge-css {
+				background: #3799d6;
+			}
+			.badge-js {
+				background: #f8dc3d;
+				color: #232323;
+			}
+			.badge-bootstrap {
+				background: #8912fc;
+			}
+			.badge-tailwind {
+				background: #38bdf8;
+			}
+
 			.pfp {
 				width: 120px;
 				height: 120px;
 				object-fit: cover;
 				border-radius: 100px;
 				outline: 5px solid white;
+				animation: 1s pfp cubic-bezier(.45,.27,.18,.85);
+			}
+
+			.banner {
+				height: 400px;
+				animation: 1s banner cubic-bezier(.45,.27,.18,.85);
+			}
+
+			@keyframes pfp {
+				from {
+					transform: rotate(-50deg);
+					opacity: 0;
+				}
+
+				to {
+					transform: rotate(0deg);
+					opacity: 1;
+				}
+			}
+
+			@keyframes banner {
+				from {
+					transform: translateY(-50px);
+				}
+
+				to {
+					transform: translateY(0);
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<img src="https://images.unsplash.com/photo-1509773896068-7fd415d91e2e" alt="" class="img-fluid w-100 object-fit-cover" style="height: 400px" />
+		<img src="https://images.unsplash.com/photo-1509773896068-7fd415d91e2e" alt="" class="img-fluid w-100 object-fit-cover banner"/>
 		<main class="container bg-info-suble" style="max-width: 720px; transform: translateY(-60px)">
-			<header class="border-bottom pb-3">
+			<header class="pb-3 border-bottom mb-3">
 				<img src="./img/pfp.png" class="pfp" />
 				<h2>Barra Ihsan</h2>
 				<p>Just another human being who loves technology</p>
@@ -63,20 +108,24 @@
 			</header>
 
 			<section>
-				<div class="py-3 d-flex justify-content-between align-items-center mb-4">
+				<a href="./multimedia/" class="btn btn-outline-primary d-flex align-items-center justify-content-between py-3">
+					<i class="bi bi-images"></i>
+					<p class="m-0">Multimedia Showcase</p>
+				</a>
+				<div class="py-3 d-flex justify-content-between align-items-center my-4 border-top ">
 					<p class="mb-0 fs-5">What I've learned so far:</p>
-					<img src="./img/logo.jpg" class="w-25" alt="Kodein Logo">
+					<img src="./img/logo.jpg" class="w-25" alt="Kodein Logo" />
 				</div>
 
 				<div class="list-tugas">
 					<div class="card mb-3" style="max-width: 720px">
 						<div class="row g-0">
 							<div class="col-md-4">
-								<img src="./img/thumb/week-1.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px;" alt="w-100" />
+								<img src="./img/thumb/week-1.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
 							</div>
 							<div class="col-md-8">
 								<div class="card-body">
-									<p class="badge text-bg-info">HTML</p>
+									<p class="badge badge-html">HTML</p>
 									<a href="./week-1/">
 										<h5 class="card-title">Weekly Assignment 1</h5>
 									</a>
@@ -88,12 +137,12 @@
 					<div class="card mb-3" style="max-width: 720px">
 						<div class="row g-0">
 							<div class="col-md-4">
-								<img src="./img/thumb/week-2.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px;" alt="w-100" />
+								<img src="./img/thumb/week-2.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
 							</div>
 							<div class="col-md-8">
 								<div class="card-body">
-									<p class="badge text-bg-info">HTML</p>
-									<p class="badge text-bg-warning">CSS</p>
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
 									<a href="./week-2/">
 										<h5 class="card-title">Weekly Assignment 2</h5>
 									</a>
@@ -105,12 +154,12 @@
 					<div class="card mb-3" style="max-width: 720px">
 						<div class="row g-0">
 							<div class="col-md-4">
-								<img src="./img/thumb/week-3.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px;" alt="w-100" />
+								<img src="./img/thumb/week-3.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
 							</div>
 							<div class="col-md-8">
 								<div class="card-body">
-									<p class="badge text-bg-info">HTML</p>
-									<p class="badge text-bg-warning">CSS</p>
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
 									<a href="./week-3/">
 										<h5 class="card-title">Weekly Assignment 3</h5>
 									</a>
@@ -122,17 +171,172 @@
 					<div class="card mb-3" style="max-width: 720px">
 						<div class="row g-0">
 							<div class="col-md-4">
-								<img src="./img/thumb/week-4.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px;" alt="w-100" />
+								<img src="./img/thumb/week-4.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
 							</div>
 							<div class="col-md-8">
 								<div class="card-body">
-									<p class="badge text-bg-info">HTML</p>
-									<p class="badge text-bg-warning">CSS</p>
-									<p class="badge text-bg-success">Bootstrap</p>
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<p class="badge badge-bootstrap">Bootstrap</p>
 									<a href="./week-4/">
 										<h5 class="card-title">Weekly Assignment 4</h5>
 									</a>
 									<p class="card-text">Is it time to ditch writing manual CSS? Of course not! With bootstrap, we're able to make website faster than before!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/week-5.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<p class="badge badge-js">Javascript</p>
+									<a href="./week-5/">
+										<h5 class="card-title">Weekly Assignment 5</h5>
+									</a>
+									<p class="card-text">We learnt about JavaScript! While this seems useless, but it's the foundation of becoming a fully functional website!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p class="mb-0 fs-5 py-3">Little projects that I made:</p>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-1.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-1/">
+										<h5 class="card-title">99x Designers</h5>
+									</a>
+									<p class="card-text">Trying to be as responsive as possible, but it turns out that it was hard.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-2.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-2/">
+										<h5 class="card-title">Profile Cards</h5>
+									</a>
+									<p class="card-text">A mini profile cards that describe me. Fun Fact: This project is used to be the homepage of this domain.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-3.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-3/">
+										<h5 class="card-title">Umroh Plus Travel</h5>
+									</a>
+									<p class="card-text">Learn animation for the first time, and we make this nice home/landing page for umroh travel</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-4.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-4/">
+										<h5 class="card-title">Mario</h5>
+									</a>
+									<p class="card-text">A fun side project I made after learning how to make an animation in css</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-5.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-5/">
+										<h5 class="card-title">Multimedia Club</h5>
+									</a>
+									<p class="card-text">Make a "simple" landing page to polish our animation skill in css</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-6.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<p class="badge badge-bootstrap">Bootstrap</p>
+									<a href="./project-6/">
+										<h5 class="card-title">Semeru Adventure</h5>
+									</a>
+									<p class="card-text">Now we learn about bootstrap and we make a landing page for Tidung Island, Ijen, and Bromo tour!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-tugas">
+					<div class="card mb-3" style="max-width: 720px">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="./img/thumb/project-7.png" class="w-100 rounded-start ratio-4x3 object-fit-cover" style="max-height: 180px" alt="w-100" />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="badge badge-html">HTML</p>
+									<p class="badge badge-css">CSS</p>
+									<a href="./project-7/">
+										<h5 class="card-title">Real Estate</h5>
+									</a>
+									<p class="card-text">An exam project that we make on our own and I tried to make it as responsive as possible.</p>
 								</div>
 							</div>
 						</div>
