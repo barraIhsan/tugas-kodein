@@ -28,4 +28,5 @@ In this repo, you'll find my school assignments conveniently stored for referenc
     -   ### [📁 2 - Login](weekly/2-login/)
     -   ### [📁 3 - Landing Page](weekly/3-landingPage/)
     -   ### [📂 4 - Bootstrap Book Store Website](weekly/4-bootstrapStore/)
-    -   ### [📂 5 - Javascript](weekly/5-javascript/)
+    -   ### [📂 5 - Basic Javascript](weekly/5-basicJavascript/)
+    -   ### [📂 6 - Javascript (Object, Array, etc.)](weekly/6-javascript/)
